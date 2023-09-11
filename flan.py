@@ -11,7 +11,6 @@ def generate_text_flan(input_string, max_length):
 
   return (final_text)
 
-
 def to_gradio():
   demo = gr.Interface(fn=generate_text_flan,
                       inputs=["text", gr.Slider(0, 250)],
